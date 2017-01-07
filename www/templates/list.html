@@ -1,0 +1,13 @@
+<ion-view view-title="Clevernote">
+     <ion-content ng-controller="ListCtrl">
+        <div class="padding">
+            <a href="#/add" class="button button-balanced button-block icon-center ion-plus"> Add</a>
+        </div>
+         <div class="list">
+             <a href="#/edit/{{note.id}}" class="item item-text-wrap" ng-repeat="note in notes">
+                 <h2>{{note.title}}</h2>
+                 <p class="noteDescription">{{note.description}}</p>
+             </a>
+        </div>
+    </ion-content>
+</ion-view>
